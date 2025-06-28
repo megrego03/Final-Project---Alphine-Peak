@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Marisa Gregory">
+  <meta name="description" content="Contact Frostpeak Lodge to plan your dream Swiss-Alps vacation.">
+  <title>Alpine Peaks</title>
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1><a href="index.html">Alpine Peak</a></h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Accommodations</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2 class="visually-hidden">Hero Image</h2>
+      <img src="images/swiss-valley.jpg" alt="Snow-covered Swiss valley overlooked by Alpine Peak Lodge" width="1280" height="400">
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us! Required fields marked with a *</p>
+
+      <div class="contact-wrapper">
+        <img src="images/swiss-sunset.jpg" alt="Sunset over Alpine Peak’s mountain lake" width="1280" height="400">
+
+        <form>
+          <div class="left-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+
+          <div class="right-group">
+            <fieldset>
+              <legend>Preferred Contact Method *</legend>
+              <label><input type="radio" name="contactMethod" value="email" required> Email</label>
+              <label><input type="radio" name="contactMethod" value="phone"> Phone</label>
+            </fieldset>
+
+            <label for="comments">Comments *</label>
+            <textarea id="comments" name="comments" required></textarea>
+
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 – Alpine Peak</p>
+      <p>This site is for educational purposes only</p>
+    </footer>
+  </div>
+</body>
+</html>
